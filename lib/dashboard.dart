@@ -9,8 +9,25 @@ class Dashboard extends StatelessWidget {
       appBar: AppBar(
         title: Text("Dashboard"),
       ),
-      body: Center(
-        child: Text("This is Dashboard"),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Container(
+            height: 200,
+            width: 300,
+            color: Colors.blue,
+          ),
+          Container(
+            height: 200,
+            width: 300,
+            color: Colors.pink,
+          ),
+          Container(
+            height: 200,
+            width: 250,
+            color: Colors.green,
+          ),
+        ],
       ),
     );
   }
