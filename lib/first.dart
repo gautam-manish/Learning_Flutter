@@ -44,6 +44,21 @@ class First extends StatelessWidget {
               ),
             ),
           ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: FloatingActionButton(
+                onPressed: () {
+                  // Navigator.push(context, MaterialPageRoute(builder:(ctx){
+                  //   return Second();
+                  // }));
+                  Navigator.pushNamed(context, "/normal");
+                },
+                child: Icon(Icons.qr_code_2_rounded),
+              ),
+            ),
+          ),
         ],
       ),
     );

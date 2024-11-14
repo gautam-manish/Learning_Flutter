@@ -1,5 +1,8 @@
 import 'package:first_flutter_app/dashboard.dart';
 import 'package:first_flutter_app/first.dart';
+import 'package:first_flutter_app/listViewExample/builder_list_view.dart';
+import 'package:first_flutter_app/listViewExample/normal_list_view.dart';
+import 'package:first_flutter_app/listViewExample/seperated_list_view.dart';
 import 'package:first_flutter_app/second.dart';
 import 'package:flutter/material.dart';
 
@@ -22,9 +25,18 @@ class MyApp extends StatelessWidget {
         },
         "/dashboard":(ctx) {
           return Dashboard();
+        },
+        "/normal":(ctx){
+          return NormalListView();
+        },
+        "/builder":(ctx){
+          return BuilderListView();
+        },
+        "/seperated":(ctx){
+          return SeperatedListView();
         }
       },
-      initialRoute: "/",
+      initialRoute: "/seperated",
     );
   }
 }
