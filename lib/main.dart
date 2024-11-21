@@ -1,5 +1,7 @@
 import 'package:first_flutter_app/dashboard.dart';
 import 'package:first_flutter_app/first.dart';
+import 'package:first_flutter_app/gridViewExample/builder_grid_view.dart';
+import 'package:first_flutter_app/gridViewExample/normal_grid_view.dart';
 import 'package:first_flutter_app/listViewExample/builder_list_view.dart';
 import 'package:first_flutter_app/listViewExample/normal_list_view.dart';
 import 'package:first_flutter_app/listViewExample/seperated_list_view.dart';
@@ -34,6 +36,12 @@ class MyApp extends StatelessWidget {
         },
         "/seperated":(ctx){
           return SeperatedListView();
+        },
+        "/grid":(ctx){
+          return NormalGridView();
+        },
+        "/buildergv":(ctx){
+          return BuilderGridView();
         }
       },
       initialRoute: "/seperated",
