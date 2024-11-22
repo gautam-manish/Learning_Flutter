@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/animatedWidget/animated-widget.dart';
 import 'package:first_flutter_app/dashboard.dart';
 import 'package:first_flutter_app/first.dart';
 import 'package:first_flutter_app/gridViewExample/builder_grid_view.dart';
@@ -42,6 +43,9 @@ class MyApp extends StatelessWidget {
         },
         "/buildergv":(ctx){
           return BuilderGridView();
+        },
+        "/animate":(ctx){
+          return AnimatedWidgetExample();
         }
       },
       initialRoute: "/seperated",
