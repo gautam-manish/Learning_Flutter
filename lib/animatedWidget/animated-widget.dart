@@ -18,13 +18,13 @@ class _AnimatedWidgetExampleState extends State<AnimatedWidgetExample> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            AnimatedContainer(
-              duration: const Duration(milliseconds: 600),
-              width: shouldChange ? 600 : 200,
-              height: shouldChange ? 800 : 300,
-              decoration: BoxDecoration(
-                  color: Colors.green, borderRadius: BorderRadius.circular(10)),
-            ),
+            // AnimatedContainer(
+            //   duration: const Duration(milliseconds: 600),
+            //   width: shouldChange ? 600 : 200,
+            //   height: shouldChange ? 800 : 300,
+            //   decoration: BoxDecoration(
+            //       color: Colors.green, borderRadius: BorderRadius.circular(10)),
+            // ),
             Container(
               height: 400,
               width: 400,
@@ -43,7 +43,9 @@ class _AnimatedWidgetExampleState extends State<AnimatedWidgetExample> {
               ),
             ),
             )
+            
           ],
+          
         ),
       ),
       floatingActionButton: FloatingActionButton(

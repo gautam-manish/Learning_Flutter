@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
           return AnimatedWidgetExample();
         }
       },
-      initialRoute: "/seperated",
+      initialRoute: "/animate",
     );
   }
 }
